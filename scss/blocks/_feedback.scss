@@ -1,0 +1,25 @@
+.feedback {
+    padding-bottom: 180px;
+    @media screen and (max-width:999px) {
+        padding-bottom: 90px 0;
+    }
+}
+.feedback-title{
+    margin-bottom:38px;
+
+    @media screen and (max-width:999px) {
+        margin-bottom:20px;
+    }
+}
+
+.feedback-form {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    align-items: center;
+
+    @media screen and (max-width:950px) {
+        grid-template-columns: 1fr;
+    }
+
+}

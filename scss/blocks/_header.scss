@@ -1,0 +1,113 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 840px;
+    padding-top: 30px;
+    padding-bottom: 74px;
+    background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), 
+    url('./../img/header/header-bg.jpg'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    @media screen and (max-width:999px) {
+        min-height: unset;
+        row-gap: 50px;        
+    }
+    
+}
+.header-top-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+// мобильная версия
+.header-top-row--mobile{
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 60px;
+    padding: 40px 0;
+
+    .header-nav{
+        display: block;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+
+    .header-nav-btn{
+        position: fixed;
+        top: 50px;
+        right: 16px;
+    }
+
+    .nav{
+        font-size: 20px;
+    }
+}
+
+.header-nav{
+    @media screen and (max-width:999px) {
+        display: none;
+        
+    }
+}
+.header-nav-btn{
+    display: none;
+    @media screen and (max-width:999px) {
+        display: block;
+        
+    }
+}
+.header-title{
+    position: relative;
+    text-align: center;
+    font-size: 48px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+    padding-bottom: 121px;
+
+    @media screen and (max-width:999px) {
+        font-size: 32px;
+        padding-bottom: 100px;
+        
+    }
+}
+.header-title-icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+
+}
+
+.header-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px; 
+
+    @media screen and (max-width:560px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        
+    }
+}
